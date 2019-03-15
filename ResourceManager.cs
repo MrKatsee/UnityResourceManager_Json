@@ -8,9 +8,10 @@ using System.Text;
 public class ResourceManager : MonoBehaviour
 {
     //같은 타입 데이터는 같은 파일로 Append 하여 이어 쓴다
-    //단, 인덱스 값이 같은 경우, 해당 인덱스의 내용을 수정한다
+    //단, 인덱스(ID) 값이 같은 경우, 해당 인덱스의 내용을 수정한다
     //Json .Net 뭐시기 쓴다는 가정
-
+    //CreateFile 메쏘오드를 호출해서 저장함
+    //반드시반드시 저장할 객체에는 int형 필드인 ID가 있어야 함
     private static ResourceManager instance = null;
     public static ResourceManager Instance { get { return instance; } }
 
